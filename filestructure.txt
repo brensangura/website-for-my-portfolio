@@ -1,0 +1,4 @@
+portfolio/
+├── portfolio.html                # Main HTML file
+├── portfoliostyle.css        # External stylesheet
+└── Brian Sangura's Resume.pdf # Downloadable CV
