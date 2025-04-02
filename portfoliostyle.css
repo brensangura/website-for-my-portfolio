@@ -33,8 +33,9 @@ body {
 h1.Title {
     font-size: 2.2em;
     color: var(--primary);
-    text-align: center;
+    margin-bottom: 10px;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .Subtitle {
@@ -46,6 +47,10 @@ h1.Title {
     margin-bottom: 15px;
     color: var(--text);
 }
+.section-header {
+    padding-left: 20px; /* Adjust this value to match your content alignment */
+    margin-bottom: 15px;
+}
 
 section {
     background-color: white;
@@ -55,11 +60,11 @@ section {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.list {
+.list-tech-list {
     padding-left: 20px;
 }
 
-.list li {
+.list-tech-list li {
     margin-bottom: 8px;
 }
 
@@ -93,4 +98,254 @@ footer {
 
 .cv-link:hover {
     color: var(--highlight);
+}
+
+.tech-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.tech-list li {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1em;
+}
+
+.tech-list i {
+    font-size: 1.5em;
+    width: 30px;
+    text-align: center;
+}
+
+.fa-python { color: #3776AB; }
+.fa-html5 { color: #E34F26; }
+.fa-css3-alt { color: #1572B6; }
+.fa-database { color: #00758F; }
+
+.Subtitle i {
+    margin-right: 8px;
+    font-size: 0.9em;
+}
+
+.fa-user-md { color: #e74c3c; }       /* Red for medical */
+.fa-laptop-code { color: #3498db; }   /* Blue for tech */
+.fa-chart-line { color: #2ecc71; }    /* Green for data */
+
+/* Education Section Styles */
+.education-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.education-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    border-left: 3px solid var(--secondary);
+    transition: all 0.3s ease;
+}
+
+.education-item:hover {
+    background-color: rgba(52, 152, 219, 0.05);
+}
+
+.school-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.school-icon {
+    font-size: 1.5em;
+    color: var(--secondary);
+    width: 40px;
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .education-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    .school-logo, .school-icon {
+        margin-bottom: 5px;
+    }
+}
+
+/* Education Section */
+.education-section {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 20px 0;
+}
+
+.education-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.education-item:hover {
+    transform: translateY(-3px);
+}
+
+.school-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    padding: 5px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .education-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    .school-logo {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* Work Experience Section */
+.work-experience {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 20px 0;
+}
+
+.experience-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.experience-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.company-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 8px;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.experience-details {
+    flex: 1;
+}
+
+.position {
+    color: var(--primary);
+    margin: 0 0 5px 0;
+    font-size: 1.1em;
+}
+
+.company {
+    color: var(--text);
+    margin: 0;
+    font-size: 0.95em;
+    opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .experience-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        padding: 25px 15px;
+    }
+    
+    .company-logo {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .experience-details {
+        width: 100%;
+    }
+}
+
+/* Projects Section */
+.project-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.project-icon {
+    font-size: 1.5em;
+    color: var(--secondary);
+    width: 40px;
+    text-align: center;
+}
+
+.project-details {
+    flex: 1;
+}
+
+.project-link {
+    color: var(--highlight);
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.project-link:hover {
+    color: var(--secondary);
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    .project-icon {
+        margin-bottom: 5px;
+    }
 }
