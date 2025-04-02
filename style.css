@@ -1,0 +1,26 @@
+.paragraph {
+  font-size: 16px;
+  line-height: 1.5;
+  color: blue;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: green;
+  text-align: center;
+}
+
+body {
+    background-color: lightblue;
+}
+
+.paragraph {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid greenyellow;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
