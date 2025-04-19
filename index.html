@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Welcome to my Portfolio Website</title>
-<link rel="stylesheet" href="portfoliostyle.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Welcome to my Portfolio Website</title>
+    <link rel="stylesheet" href="portfoliostyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="body">
     <!-- Header Section -->
     <header>
+        <img src="C:\Users\HP\Desktop\PLP Academy\website for my portfolio\images\profile.jpeg" alt="Brian Sangura" class="profile-image" style="width: 150px; height: auto; border-radius: 50%; display: block; margin: 0 auto 20px;">
         <h1 class="Title">Welcome to my Portfolio Website</h1>
         <p class="paragraph">
             Welcome to my portfolio website. This is a simple HTML page that 
@@ -61,7 +62,7 @@
                 </div>
                 
                 <div class="education-item">
-                    <img src= "images/alx logo.jfif" alt="ALX" class="school-logo">
+                    <img src="images/alx logo.jfif" alt="ALX" class="school-logo">
                     <p class="paragraph">Data Analytics - ALX</p>
                 </div>
                 
@@ -161,12 +162,38 @@
     
     <!-- Contact Section -->
     <section>
-        <h2 class="Title">
-            Contact Information
-        </h2>
+        <h2 class="Title">Contact Information</h2>
         <p class="paragraph">
             +254720638389 / sangura.bren@gmail.com
         </p>
+        
+        <!-- New Contact Form -->
+        <div class="contact-form" style="max-width: 500px; margin: 20px auto; padding: 20px; background: #f9f9f9; border-radius: 8px;">
+            <h3 style="text-align: center; margin-bottom: 15px;">Send me a message</h3>
+            <form action="https://formsubmit.co/sangura.bren@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="New message from portfolio">
+                <input type="hidden" name="_next" value="https://yourportfolio.com/thank-you.html">
+                
+                <div style="margin-bottom: 15px;">
+                    <label for="name" style="display: block; margin-bottom: 5px;">Name:</label>
+                    <input type="text" id="name" name="name" required style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px;">
+                </div>
+                
+                <div style="margin-bottom: 15px;">
+                    <label for="email" style="display: block; margin-bottom: 5px;">Email:</label>
+                    <input type="email" id="email" name="email" required style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px;">
+                </div>
+                
+                <div style="margin-bottom: 15px;">
+                    <label for="message" style="display: block; margin-bottom: 5px;">Message:</label>
+                    <textarea id="message" name="message" required style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; min-height: 100px;"></textarea>
+                </div>
+                
+                <button type="submit" style="background: #4CAF50; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; width: 100%;">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+            </form>
+        </div>
         
         <h2 class="Title">Reference Materials</h2>
         <p>
